@@ -25,17 +25,17 @@ export default function MemberCard({
   }
 
   return (
-    <Card className={cn("w-full", isExpiringSoon && "border-red-200 bg-red-50 dark:border-red-800 dark:bg-red-950/20")}>
+    <Card className={cn("w-full max-w-full overflow-hidden", isExpiringSoon && "border-red-200 bg-red-50 dark:border-red-800 dark:bg-red-950/20")}>
       <CardContent className="p-4">
-        <div className="flex items-start justify-between">
-          <div className="flex items-center space-x-3">
+        <div className="flex items-start justify-between flex-wrap">
+          <div className="flex items-center space-x-3 min-w-0">
             <Avatar>
               <AvatarFallback>{getInitials(member.fullName)}</AvatarFallback>
             </Avatar>
             <div className="min-w-0 flex-1">
               <div className="font-medium truncate">{member.fullName}</div>
-              <div className="text-sm text-muted-foreground truncate">{member.email}</div>
-              <div className="text-sm text-muted-foreground">{member.phoneNumber}</div>
+              <div className="text-sm text-muted-foreground truncate break-all">{member.email}</div>
+              <div className="text-sm text-muted-foreground truncate break-all">{member.phoneNumber}</div>
             </div>
           </div>
           <Badge variant={member.status === "Active" ? "default" : "secondary"}>{member.status}</Badge>

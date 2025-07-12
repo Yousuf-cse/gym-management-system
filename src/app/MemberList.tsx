@@ -57,7 +57,7 @@ export default function MembersList({ members, onArchiveMember }: { members: Mem
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Members List</h1>
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Fit Culture Members List</h1>
           <p className="text-muted-foreground mt-2 text-sm md:text-base">
             View and manage all gym members with filtering options.
           </p>
@@ -108,7 +108,7 @@ export default function MembersList({ members, onArchiveMember }: { members: Mem
               ) : (
                 <>
                   {/* Mobile Card View */}
-                  <div className="grid gap-4 sm:hidden">
+                  <div className="grid gap-4 sm:hidden px-2 overflow-x-hidden">
                     {filteredMembers.map((member) => (
                       <MemberCard
                         key={member.id}

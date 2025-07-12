@@ -36,7 +36,7 @@ export default function GymManagementApp() {
       {/* Desktop Sidebar */}
       <div className="hidden md:fixed md:inset-y-0 md:left-0 md:z-50 md:w-64 md:bg-card md:border-r md:block">
         <div className="flex h-16 items-center justify-between px-6 border-b">
-          <h2 className="text-lg font-semibold">FitFlex Pro</h2>
+          <h2 className="text-lg font-semibold">Fit Culture</h2>
           <ThemeToggle />
         </div>
         <nav className="p-4 space-y-2">

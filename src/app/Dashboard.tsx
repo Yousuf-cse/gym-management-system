@@ -80,7 +80,7 @@ export default function Dashboard({ members }: { members: Member[] }) {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Welcome to FitFlex Pro! 💪</h1>
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Welcome to Fit Culture! 💪</h1>
         <p className="text-muted-foreground mt-2 text-sm md:text-base">
           Manage your gym members efficiently with our comprehensive dashboard.
         </p>

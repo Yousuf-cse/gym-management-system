@@ -1,0 +1,43 @@
+import type { Member } from "@/interfaces/Member.interface"
+
+export const initialMembers: Member[] = [
+  {
+    id: "1",
+    fullName: "Sree Gopal Saha",
+    age: 25,
+    phoneNumber: "+910101010101",
+    email: "gopal@example.com",
+    gender: "Male",
+    joinDate: new Date("2024-01-15"),
+    expiryDate: new Date("2025-01-15"),
+    membershipType: "Yearly",
+    status: "Active",
+    archived: false,
+  },
+  {
+    id: "2",
+    fullName: "Yousuf Mallik",
+    age: 24,
+    phoneNumber: "+910202020202",
+    email: "isshh@example.com",
+    gender: "Male",
+    joinDate: new Date("2024-11-01"),
+    expiryDate: new Date("2024-12-01"),
+    membershipType: "Monthly",
+    status: "Active",
+    archived: false,
+  },
+  {
+    id: "3",
+    fullName: "Sneha Maji",
+    age: 22,
+    phoneNumber: "+910303030303",
+    email: "sneha@example.com",
+    gender: "Female",
+    joinDate: new Date("2024-10-15"),
+    expiryDate: new Date("2024-11-20"),
+    membershipType: "Monthly",
+    status: "Inactive",
+    archived: false,
+  },
+]
